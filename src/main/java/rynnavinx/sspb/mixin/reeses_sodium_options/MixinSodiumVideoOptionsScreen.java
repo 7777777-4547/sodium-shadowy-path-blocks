@@ -24,8 +24,8 @@ public class MixinSodiumVideoOptionsScreen {
     private List<OptionPage> pages;
 
 
-    @Inject(method = "<init>(Lnet/minecraft/client/gui/screen/Screen;)V", at = @At("TAIL"))
-    private void addSSPBOptionPage(CallbackInfo ci){
+    @Inject(method = "init", at = @At("TAIL"))
+    public void postInit(CallbackInfo ci) {
         this.pages.add(SSPBGameOptionPages.sspb());
     }
 }
