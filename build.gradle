@@ -41,7 +41,7 @@ dependencies {
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "com.github.FlashyReese:reeses-sodium-options:${project.reeses_sodium_options}"
+	modImplementation "maven.modrinth:reeses-sodium-options:${project.reeses_sodium_options}"
 }
 
 processResources {
