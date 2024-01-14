@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "LGPLv3"
+
+[[mods]]
+modId = "sspb"
+version = "${version}"
+displayName = "Sodium Shadowy Path Blocks"
+displayURL="https://github.com/Rynnavinx/sodium-shadowy-path-blocks"
+logoFile="assets/sspb/icon.png"
+credits="Rynnavinx"
+authors="Rynnavinx"
+description = '''
+SSPB reintroduces vanilla-like smooth lighting to non-full blocks (e.g. dirt paths and how they have dark shading when directly next to a full block) when using Rubidium.
+'''
+
+[[dependencies.sspb]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sspb]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20,)"
+ordering = "NONE"
+side = "BOTH"
